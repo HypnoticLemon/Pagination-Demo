@@ -114,6 +114,8 @@ public class MainActivity extends AppCompatActivity implements RecyclerListListe
 
                         Log.e(TAG, "onResponse:size " + moviesBeans.size());
                         Log.d(TAG, "Test logs");
+                        Log.d(TAG, "Test fifth logs");
+
 
                         Log.e(TAG, "onResponse: " + moviesBeans.get(0).getTitle());
                         movieListAdapter = new MovieListAdapter(context, moviesBeans, recyclerListListener);

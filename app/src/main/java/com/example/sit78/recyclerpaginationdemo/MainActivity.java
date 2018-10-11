@@ -94,7 +94,6 @@ public class MainActivity extends AppCompatActivity implements RecyclerListListe
         Log.e(TAG, "ItemClick: ");
     }
 
-
     private void getMovieList() {
         progressBarMovieList.setVisibility(View.VISIBLE);
         ApiInterface apiService = ApiClient.getClient().create(ApiInterface.class);
@@ -114,6 +113,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerListListe
                         List<MovieListData.DataBean.MoviesBean> moviesBeans = movieListData.getMovies();
 
                         Log.e(TAG, "onResponse:size " + moviesBeans.size());
+                        Log.d(TAG, "Test logs");
 
                         Log.e(TAG, "onResponse: " + moviesBeans.get(0).getTitle());
                         movieListAdapter = new MovieListAdapter(context, moviesBeans, recyclerListListener);

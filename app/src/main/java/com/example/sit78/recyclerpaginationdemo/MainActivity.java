@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity implements RecyclerListListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Log.d(TAG, MainActivity.class.getSimpleName());
         context = MainActivity.this;
         recyclerListListener = this;
         initialization();
@@ -43,6 +45,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerListListe
     }
 
     private void initialization() {
+        Log.d(TAG, "initialization");
         recyclerView = new RecyclerView(context);
         layoutManager = new LinearLayoutManager(context);
         progressBarMovieList = findViewById(R.id.progressBarMovieList);
@@ -112,7 +115,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerListListe
 
                         Log.e(TAG, "onResponse:size " + moviesBeans.size());
 
-                        Log.e(TAG, "onResponse: "+moviesBeans.get(0).getTitle() );
+                        Log.e(TAG, "onResponse: " + moviesBeans.get(0).getTitle());
                         movieListAdapter = new MovieListAdapter(context, moviesBeans, recyclerListListener);
                         recyclerView.setAdapter(movieListAdapter);
                         movieListAdapter.notifyDataSetChanged();

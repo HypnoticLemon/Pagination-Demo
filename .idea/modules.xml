@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/RecyclerPaginationDemo.iml" filepath="$PROJECT_DIR$/RecyclerPaginationDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Pagination-Demo.iml" filepath="$PROJECT_DIR$/Pagination-Demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

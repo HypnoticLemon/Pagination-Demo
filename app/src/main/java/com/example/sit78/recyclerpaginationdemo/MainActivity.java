@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerListListe
 
     @Override
     public void ItemClick(int position, String data, View view, int id) {
-        Log.e(TAG, "ItemClick: ");
+        
     }
 
     private void getMovieList() {
